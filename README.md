@@ -16,3 +16,22 @@ trees.
 <br>
 1. program compresses given file using Huffman algorithm for encoding,
 2. program decompresses given file using the same algorithm for decoding.
+
+<br>
+
+commands to run the program in the dev machine:
+
+dos2unix *.txt
+g++ -std=c++1y *.cpp -o Main (to create exe: g++ -std=c++1y *.cpp -o Main.exe)
+
+encoding: 
+./Main -i input_1.txt -encode (or ./Main.exe -i input_1.txt -encode)
+
+decoding the encoded string: 
+./Main -i decode_input_1.txt -decode (or ./Main.exe -i decode_input_1.txt -decode)
+
+huffman coding of a particular character:
+./Main -s character (or ./Main.exe -s character)
+
+listing the tree:
+./Main -l (or ./Main.exe -l)
